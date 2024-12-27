@@ -15,5 +15,8 @@ tip_percentage = (tip_amount * total_bill)/100
 #calculating final bill for each person
 final_bill = (total_bill + tip_percentage)/total_number_of_peoples
 
+#round figure the total amount to 2 decimals
+rounded_bill = round(final_bill, 2)
+
 # Print the final bill for everyone
-print("The final bill per each person is : " + str(round(final_bill, 2)))
+print(f"The final bill per each person is :  {rounded_bill}")
